@@ -3,6 +3,8 @@ package com.alexsandro.cursomc.services;
 import java.util.List;
 import java.util.Optional;
 
+import javax.transaction.Transactional;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.data.domain.Page;
@@ -28,6 +30,7 @@ public class CategoriaService {
 				"Objeto não encontrado! Id: " + id + ", Tipo: " + Categoria.class.getName()));
 	}
 
+	@Transactional
 	public Categoria insert(Categoria obj) {
 		obj.setId(null); // caso o id esteja diferente de nulo e ja exista um registro na base com o
 							// mesmo id, a operacao entendera que eh um update ao inves de um insert
