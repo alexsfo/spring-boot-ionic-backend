@@ -18,7 +18,6 @@ import com.alexsandro.cursomc.domain.Endereco;
 import com.alexsandro.cursomc.domain.enums.TipoCliente;
 import com.alexsandro.cursomc.dto.ClienteDTO;
 import com.alexsandro.cursomc.dto.ClienteNewDTO;
-import com.alexsandro.cursomc.repositories.CidadeRepository;
 import com.alexsandro.cursomc.repositories.ClienteRepository;
 import com.alexsandro.cursomc.repositories.EnderecoRepository;
 import com.alexsandro.cursomc.services.exceptions.DataIntegrityException;
