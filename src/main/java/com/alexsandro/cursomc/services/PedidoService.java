@@ -25,19 +25,19 @@ public class PedidoService {
 	private PagamentoRepository pagamentoRepository;
 	
 	@Autowired
-	ItemPedidoRepository itemPedidoRepository;
+	private ItemPedidoRepository itemPedidoRepository;
 
 	@Autowired
-	BoletoService boletoService;
+	private BoletoService boletoService;
 
 	@Autowired
-	ProdutoService produtoService;
+	private ProdutoService produtoService;
 
 	@Autowired
-	ClienteService clienteService;
+	private ClienteService clienteService;
 	
 	@Autowired
-	EmailService emailService;
+	private EmailService emailService;
 
 	
 	public Pedido find(Integer id) {
